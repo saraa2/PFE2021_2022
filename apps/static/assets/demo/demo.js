@@ -72,7 +72,7 @@ demo = {
       }
     };
 
-    ctx = document.getElementById('lineChartExample').getContext("2d");
+    ctx = document.getElementById('sa').getContext("2d");
 
     gradientStroke = ctx.createLinearGradient(500, 0, 100, 0);
     gradientStroke.addColorStop(0, '#80b6f4');
@@ -358,9 +358,9 @@ demo = {
     gradientStroke.addColorStop(0, 'rgba(119,52,169,0)'); //purple colors
 
     var data = {
-      labels: ['JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'],
+      labels: ['Zone0', 'Zone1', 'Zone2', 'Zone3', 'Zone4'],
       datasets: [{
-        label: "Data",
+        label: "Zones",
         fill: true,
         backgroundColor: gradientStroke,
         borderColor: '#d048b6',
@@ -423,7 +423,7 @@ demo = {
 
 
 
-    var chart_labels = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'];
+    var chart_labels = ['Jan', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'];
     var chart_data = [100, 70, 90, 70, 85, 60, 75, 60, 90, 80, 110, 100];
 
 
@@ -498,9 +498,9 @@ demo = {
         display: false
       },
       data: {
-        labels: ['USA', 'GER', 'AUS', 'UK', 'RO', 'BR'],
+        labels: ['Zone0', 'Zone1', 'Zone2', 'Zone3', 'Zone4'],
         datasets: [{
-          label: "Countries",
+          label: "Zones",
           fill: true,
           backgroundColor: gradientStroke,
           hoverBackgroundColor: gradientStroke,
@@ -508,7 +508,7 @@ demo = {
           borderWidth: 2,
           borderDash: [],
           borderDashOffset: 0.0,
-          data: [53, 20, 10, 80, 100, 45],
+          data: [53, 20, 10, 80, 100],
         }]
       },
       options: gradientBarChartConfiguration
